@@ -5,6 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+/**
+ * 体验最基本的liteflow流程引擎使用方式
+ */
 @SpringBootApplication
 public class HelloWorldApplication {
     public static void main(String[] args) {

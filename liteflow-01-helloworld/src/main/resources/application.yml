@@ -1,2 +1,7 @@
+spring:
+  application:
+    name: liteflow-helloworld
+
+
 liteflow:
   rule-source: config/flow.el.xml
