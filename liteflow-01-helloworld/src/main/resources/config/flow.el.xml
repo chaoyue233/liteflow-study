@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+    <!-- 依次执行A、B、C三个组件的任务 -->
+    <chain name="helloworldChain">
+        THEN(A, B, C);
+    </chain>
+</flow>
