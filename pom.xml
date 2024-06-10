@@ -20,6 +20,7 @@
     <modules>
         <module>liteflow-01-helloworld</module>
         <module>liteflow-02-mysql</module>
+        <module>liteflow-03-component</module>
     </modules>
 
     <dependencies>
