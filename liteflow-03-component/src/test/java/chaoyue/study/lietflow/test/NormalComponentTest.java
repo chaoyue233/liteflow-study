@@ -14,6 +14,7 @@ public class NormalComponentTest {
 
     @Test
     public void testNormal() {
-        flowExecutor.execute2Resp("chain1", "chaoyue", MyCustomContext.class);
+        MyCustomContext myCustomContext = new MyCustomContext();
+        flowExecutor.execute2Resp("chain1", "chaoyue-param", myCustomContext);
     }
 }

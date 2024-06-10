@@ -14,11 +14,12 @@ public class MyNodeComponent extends NodeComponent {
         System.out.println("普通业务节点执行逻辑");
         // 通过this关键字可以获取上下文信息，从上下文中可以获取自定义数据
         // 获取组件ID
-        System.out.println(this.getNodeId());
+        System.out.println("NodeId: " + this.getNodeId());
         // 获取执行流程名称
-        System.out.println(this.getChainName());
+        System.out.println("chainName: " + this.getChainName());
+        System.out.println("requestData: " + this.getRequestData().toString());
         MyCustomContext myContext = this.getContextBean(MyCustomContext.class);
-        System.out.println(myContext.getName());
+        System.out.println("myContext: " + myContext);
         // 修改上下文中的数据
         myContext.setName("update by A component");
     }

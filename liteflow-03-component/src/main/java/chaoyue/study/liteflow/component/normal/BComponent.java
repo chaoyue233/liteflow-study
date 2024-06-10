@@ -10,6 +10,6 @@ public class BComponent extends NodeComponent {
     public void process() throws Exception {
         System.out.println("B组件执行...");
         MyCustomContext myContext = this.getContextBean(MyCustomContext.class);
-        System.out.println(myContext.getName());
+        System.out.println("B-Context: " + myContext);
     }
 }
