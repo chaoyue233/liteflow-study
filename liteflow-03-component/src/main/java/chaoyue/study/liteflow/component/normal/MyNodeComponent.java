@@ -1,5 +1,6 @@
 package chaoyue.study.liteflow.component.normal;
 
+import chaoyue.study.liteflow.component.context.MyCustomContext;
 import com.yomahub.liteflow.annotation.LiteflowComponent;
 import com.yomahub.liteflow.core.NodeComponent;
 
@@ -16,6 +17,10 @@ public class MyNodeComponent extends NodeComponent {
         System.out.println(this.getNodeId());
         // 获取执行流程名称
         System.out.println(this.getChainName());
+        MyCustomContext myContext = this.getContextBean(MyCustomContext.class);
+        System.out.println(myContext.getName());
+        // 修改上下文中的数据
+        myContext.setName("update by A component");
     }
 
     /**

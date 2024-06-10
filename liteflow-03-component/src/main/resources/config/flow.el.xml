@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <flow>
     <chain name="chain1">
-        THEN(normalComponent);
+        THEN(normalComponent, b);
     </chain>
     <chain name="chain2">
         SWITCH(mySwitchComponent).to(b, c)
